@@ -1,0 +1,51 @@
+.auth-page {
+  @apply tw-flex tw-h-full tw-min-h-screen tw-w-full tw-flex-col tw-items-center tw-justify-center tw-p-4 lg:tw-p-6;
+}
+
+.auth-heading {
+  @apply heading1 tw-text-on-dark-emphasized;
+}
+
+.auth-main {
+  @apply tw-mt-4 tw-w-[600px] tw-max-w-full;
+}
+
+.auth-form-container {
+  @apply tw-w-full tw-rounded-lg tw-border-2 tw-p-4;
+}
+
+.register-form-row {
+  @apply tw-py-1;
+}
+
+.login-form-row {
+  @apply tw-py-2;
+}
+
+.auth-btn-container {
+  @apply tw-flex tw-items-center tw-justify-center tw-py-[10px];
+}
+
+.auth-btn {
+  @apply tw-cursor-pointer tw-rounded-md tw-px-6 tw-py-2;
+}
+
+.auth-submit-btn {
+  @apply tw-bg-success-dark tw-transition-all tw-duration-150 tw-ease-out hover:tw-bg-success-light;
+}
+
+.auth-form-bottom {
+  @apply tw-text-center;
+}
+
+.auth-form-feedback-container {
+  @apply tw-mb-3 tw-rounded-md tw-border-[1px] tw-border-error-dark tw-p-2 tw-text-center;
+}
+
+.auth-form-feedback-heading {
+  @apply heading2 tw-text-on-dark-emphasized;
+}
+
+.auth-form-feedback-message {
+  @apply tw-text-xs tw-text-error-dark md:tw-text-sm;
+}

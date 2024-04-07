@@ -1,0 +1,15 @@
+@layer components {
+  .sidenavitem-pending {
+    @apply tw-bg-primary-dark;
+  }
+
+  .sidenavitem-active {
+    @apply tw-border-l-2 tw-border-l-primary-dark tw-text-primary-dark;
+  }
+}
+
+.sidenavbar-top {
+  @apply custom-scrollbar tw-flex-auto tw-overflow-x-hidden;
+
+  height: calc(100% - 220px);
+}

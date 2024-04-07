@@ -1,0 +1,57 @@
+@layer components {
+  .form-inner-row {
+    @apply md:tw-flex md:tw-items-center;
+  }
+
+  .form-label-container {
+    @apply md:tw-mr-1 md:tw-w-40;
+  }
+
+  .form-label {
+    @apply tw-text-sm tw-text-on-dark sm:tw-text-[16px];
+  }
+
+  .form-control-container {
+    @apply md:tw-flex-1;
+  }
+
+  .form-control {
+    @apply tw-w-full tw-rounded-md tw-border tw-border-on-dark tw-text-xs tw-leading-3 tw-outline-none focus:tw-border-primary-dark sm:tw-text-sm sm:tw-leading-[14px];
+  }
+
+  .form-control-spacing {
+    @apply tw-px-3 tw-py-3;
+  }
+
+  .form-control-error {
+    @apply tw-border-error-dark focus:tw-border-error-dark;
+  }
+
+  .input-error-feedback {
+    @apply tw-mt-1 tw-block tw-h-[22px] tw-w-full tw-overflow-x-hidden tw-text-[10px] tw-leading-[11px] tw-text-error-dark sm:tw-h-[28px] sm:tw-text-xs sm:tw-leading-[14px];
+  }
+
+  .custom-input {
+    @apply tw-invisible tw-w-0 tw-appearance-none;
+  }
+
+  .custom-input-label {
+    @apply tw-cursor-pointer;
+  }
+
+  .checkbox-radio {
+    @apply tw-cursor-pointer;
+  }
+
+  .checkbox-radio-label {
+    @apply tw-ml-2 tw-inline-block -tw-translate-y-[1px] tw-cursor-pointer;
+  }
+
+  .form-btn {
+    @apply tw-cursor-pointer;
+  }
+
+  .form-btn-submitting {
+    @apply tw-cursor-not-allowed;
+  }
+}

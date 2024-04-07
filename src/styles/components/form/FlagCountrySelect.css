@@ -1,0 +1,13 @@
+@layer components {
+  .flag-country-select-options-container {
+    @apply tw-max-h-48;
+  }
+
+  .flag-country-select-icon-container {
+    @apply tw-mr-2 tw-inline-block tw-h-6 tw-w-6 tw-overflow-hidden tw-rounded-full;
+  }
+
+  .flag-country-select-icon {
+    @apply tw-h-6 tw-w-6 tw-object-cover;
+  }
+}

@@ -1,0 +1,83 @@
+@tailwind components;
+
+@layer components {
+  .responsive-img {
+    max-inline-size: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .link {
+    @apply tw-text-on-dark tw-no-underline;
+  }
+
+  .underlined-link {
+    @apply tw-text-blue-500 tw-underline tw-underline-offset-2;
+  }
+
+  .heading1 {
+    @apply tw-text-3xl tw-font-bold md:tw-text-4xl lg:tw-text-5xl;
+  }
+
+  .heading2 {
+    @apply tw-text-2xl tw-font-semibold md:tw-text-3xl lg:tw-text-4xl;
+  }
+
+  .heading3 {
+    @apply tw-text-xl tw-font-medium md:tw-text-2xl lg:tw-text-3xl;
+  }
+
+  .heading4 {
+    @apply tw-text-[16px] tw-font-medium md:tw-text-lg lg:tw-text-xl;
+  }
+
+  .heading5 {
+    @apply tw-text-sm tw-font-medium md:tw-text-[16px];
+  }
+
+  .text1 {
+    @apply tw-text-sm tw-font-normal md:tw-text-[16px];
+  }
+
+  .text2 {
+    @apply tw-text-xs tw-font-normal md:tw-text-sm;
+  }
+
+  .loading {
+    opacity: 0.25;
+    transition: opacity 200ms;
+    transition-delay: 200ms;
+  }
+
+  .custom-scrollbar {
+    /* Set the container to allow vertical scrolling */
+    overflow-y: auto;
+
+    /* Ensure that the scrollbar doesn't add extra width */
+    scrollbar-width: thin;
+
+    /* Set the scrollbar track color */
+    scrollbar-color: #cdff7b transparent;
+
+    /* Customize the scrollbar */
+    ::-webkit-scrollbar {
+      width: 4px; /* Adjust the width as needed */
+    }
+
+    /* Customize the scrollbar track */
+    ::-webkit-scrollbar-track {
+      background: transparent; /* Set the background color */
+    }
+
+    /* Customize the scrollbar thumb */
+    ::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.3); /* Set the thumb color */
+      border-radius: 8px; /* Adjust the border radius */
+    }
+
+    /* Customize the scrollbar corner */
+    ::-webkit-scrollbar-corner {
+      background: transparent; /* Set the background color */
+    }
+  }
+}

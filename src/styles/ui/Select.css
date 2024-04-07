@@ -1,0 +1,57 @@
+@layer components {
+  .select-container {
+    @apply tw-relative tw-z-10 tw-w-full;
+  }
+
+  .select {
+    @apply tw-flex tw-h-[44px] tw-w-full tw-cursor-pointer tw-items-center tw-justify-between tw-rounded-md tw-border-[1px] tw-border-on-dark tw-py-2 tw-pl-3 tw-text-sm tw-leading-[14px] focus:tw-border-primary-dark;
+
+    &::after,
+    &[aria-expanded='true']::after {
+      content: ' ';
+      width: 0;
+      height: 0;
+      display: inline-block;
+      margin-right: 8px;
+      cursor: pointer;
+    }
+
+    &::after {
+      border-top: 5px solid theme('colors.on-dark');
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 0;
+    }
+
+    &[aria-expanded='true']::after {
+      border-top: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid theme('colors.on-dark');
+    }
+  }
+
+  .select-error {
+    @apply tw-border-error-dark focus:tw-border-error-dark;
+  }
+
+  .select-disabled {
+    @apply tw-cursor-not-allowed tw-border-on-dark-disabled tw-text-on-dark-disabled tw-opacity-50;
+
+    &::after {
+      border-top: 5px solid theme('colors.on-dark-disabled');
+    }
+  }
+
+  .select-selected-option {
+    @apply tw-flex tw-items-center;
+  }
+
+  .select-options-container {
+    @apply tw-absolute tw-left-0 tw-top-full tw-z-10 tw-mt-2 tw-w-full tw-overflow-y-auto tw-rounded-md tw-border-[1px] tw-border-on-dark tw-bg-background-dark tw-py-1;
+  }
+
+  .select-option {
+    @apply tw-flex tw-w-full tw-cursor-pointer tw-items-center tw-py-2 tw-pl-3 tw-text-sm tw-leading-[14px];
+  }
+}

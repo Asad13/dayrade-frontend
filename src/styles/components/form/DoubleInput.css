@@ -1,0 +1,11 @@
+.double-input-form-control {
+  @apply form-control tw-w-1/2 tw-rounded-none tw-px-3 tw-py-3 tw-text-xs tw-leading-3 sm:tw-text-sm sm:tw-leading-[14px];
+}
+
+.double-input-form-control-left {
+  @apply tw-rounded-s-lg tw-border-r-[0.5px];
+}
+
+.double-input-form-control-right {
+  @apply tw-rounded-e-lg tw-border-l-[0.5px];
+}

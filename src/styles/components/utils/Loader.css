@@ -1,0 +1,21 @@
+@layer components {
+  .not-full-page {
+    @apply tw-relative tw-h-full tw-w-full;
+  }
+
+  .loader-container {
+    @apply tw-absolute tw-left-0 tw-top-0 tw-z-20;
+    @apply tw-flex tw-h-full tw-w-full tw-items-center tw-justify-center;
+    @apply tw-bg-overlay-background-dark;
+
+    .loader {
+      @apply tw-relative tw-inline-block tw-h-12 tw-w-12;
+      @apply tw-animate-spin tw-rounded-full;
+      @apply tw-border-[6px] tw-border-dotted tw-border-dark;
+    }
+  }
+
+  .full-page {
+    @apply tw-fixed;
+  }
+}

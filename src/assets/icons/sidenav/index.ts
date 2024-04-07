@@ -1,0 +1,10 @@
+export { default as RightArrow } from './RightArrow';
+export { default as Home } from './Home';
+export { default as LineChartUp } from './LineChartUp';
+export { default as Daimond } from './Daimond';
+export { default as Users } from './Users';
+export { default as Reflect } from './Reflect';
+export { default as Calendar } from './Calendar';
+export { default as Settings } from './Settings';
+export { default as User } from './User';
+export { default as Door } from './Door';

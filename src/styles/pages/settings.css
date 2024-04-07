@@ -1,0 +1,129 @@
+.settings-page-container {
+  @apply tw-px-4 lg:tw-px-0 lg:tw-pr-2;
+}
+
+.tabs-container {
+  @apply tw-py-[6px];
+}
+
+.horizontal-tabs-container {
+  @apply tw-hidden tw-items-center tw-justify-start tw-gap-x-2 tw-rounded-lg tw-bg-[#F9FAFB] tw-px-3 md:tw-flex;
+}
+
+.tabs-select-container {
+  @apply md:tw-hidden;
+}
+
+.tab {
+  @apply tw-rounded-md tw-px-4 tw-py-2 tw-text-sm tw-leading-5 tw-text-[#667085] hover:tw-bg-primary-light;
+}
+
+.selected-tab {
+  @apply tw-bg-background-dark tw-text-[#EAECF0] hover:tw-bg-background-dark;
+}
+
+.tabpanels-container {
+  @apply tw-py-6;
+}
+
+.settings-tabpanel-heading-container {
+  @apply tw-border-b tw-border-on-dark tw-pb-3;
+}
+
+/* Form */
+
+.settings-form-row {
+  @apply tw-border-b tw-border-b-on-dark tw-py-1 md:tw-py-2;
+}
+
+.settings-form-inner-row {
+  @apply tw-flex tw-max-w-[1200px] tw-flex-col md:tw-flex-row;
+}
+
+.settings-label-container {
+  @apply tw-mt-2 tw-max-w-[100%] tw-flex-[100%] md:tw-mt-5 md:tw-max-w-[30%] md:tw-flex-[30%];
+}
+
+.settings-inputs-container {
+  @apply tw-max-w-[100%] tw-flex-[100%] md:tw-max-w-[70%] md:tw-flex-[70%];
+}
+
+.settings-input-container {
+  @apply tw-my-2 tw-flex tw-w-full tw-flex-col tw-items-center md:tw-my-5 lg:tw-flex-row;
+}
+
+.settings-input-field-container {
+  @apply tw-w-[100%] tw-flex-[100%] lg:tw-w-[65%] lg:tw-flex-[65%];
+}
+
+.settings-label {
+  @apply tw-border-r-on-dark tw-py-3 tw-pl-3 tw-text-xs tw-leading-[16px] tw-text-on-dark sm:tw-text-sm sm:tw-leading-[16px];
+}
+
+.settings-input {
+  @apply form-control tw-w-full tw-rounded-lg tw-px-3 tw-py-3 tw-text-xs tw-leading-3 sm:tw-text-sm sm:tw-leading-[14px];
+}
+
+.settings-special-input {
+  @apply settings-input tw-px-0 tw-pr-3;
+}
+
+.settings-textarea {
+  @apply form-control tw-w-full tw-rounded-lg tw-px-3 tw-py-3 tw-text-xs tw-leading-4 sm:tw-text-sm sm:tw-leading-5;
+}
+
+.settings-checkbox-field-container {
+  @apply tw-mt-3 tw-flex tw-max-w-[100%] tw-flex-[100%] tw-justify-center tw-gap-x-4 lg:tw-mt-0 lg:tw-max-w-[35%] lg:tw-flex-[35%];
+}
+
+.settings-image-field-container {
+  @apply tw-flex tw-flex-col tw-items-center tw-justify-between md:tw-flex-row md:tw-items-start;
+}
+
+.settings-profile-image {
+  @apply tw-h-[300px] tw-w-[300px] tw-rounded-lg tw-border-2 tw-border-primary-dark tw-object-cover md:tw-h-[100px] md:tw-w-[100px] lg:tw-h-[130px] lg:tw-w-[130px];
+}
+
+.setings-profile-image-label {
+  @apply tw-text-primary-dark;
+}
+
+.setings-profile-image-delete-btn {
+  @apply tw-mr-4 tw-text-on-dark;
+}
+
+.settings-profile-image-file-input-container {
+  @apply tw-px-4 tw-text-center;
+}
+
+.settings-job-title-checkbox-container {
+  @apply tw-mt-2 tw-text-xs sm:tw-text-sm;
+}
+
+.settings-profile-btn-container {
+  @apply tw-flex tw-items-center tw-justify-end tw-gap-x-2 tw-py-3;
+
+  input {
+    @apply tw-rounded-lg tw-px-3 tw-py-2 tw-font-medium tw-transition-all;
+  }
+
+  input[type='reset'] {
+    @apply tw-border tw-border-on-dark tw-bg-background-dark tw-px-[11px] tw-py-[7px] tw-text-on-dark hover:tw-bg-black;
+  }
+
+  input[type='submit'] {
+    @apply tw-bg-primary-dark tw-text-on-util-dark hover:tw-bg-secondary-dark;
+  }
+}
+
+.settings-btn {
+  @apply tw-rounded-lg tw-px-3 tw-py-2 tw-font-medium tw-transition-all;
+}
+
+.settings-btn-submit {
+  @apply tw-bg-primary-dark tw-text-on-util-dark hover:tw-bg-secondary-dark;
+}
+
+.settings-sterling-key-btn-container {
+  @apply tw-items-start tw-justify-center;
+}
