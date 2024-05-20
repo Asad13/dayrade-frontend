@@ -52,6 +52,9 @@ export default {
           '2px 2px 1px rgba(255,255,255, 0.15)',
         ],
       },
+      boxShadow: {
+        card: ' 0px 2px 0px 0px rgba(255, 255, 255, 0.5)',
+      },
     },
   },
   plugins: [],

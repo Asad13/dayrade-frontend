@@ -43,5 +43,4 @@ export const checkAuth = async () => {
   }
 };
 
-export const logout = (signal: AbortSignal) =>
-  axiosPrivate.post('/v1/auth/logout', {}, { signal: signal });
+export const logout = () => axiosPrivate.post('/v1/auth/logout', {});

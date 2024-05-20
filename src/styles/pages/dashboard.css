@@ -1,0 +1,15 @@
+.dashboard-main-container {
+  @apply tw-flex tw-w-full tw-flex-col tw-justify-between tw-gap-4 lg:tw-flex-row-reverse;
+}
+
+.dashboard-personal-info-container {
+  @apply tw-flex tw-w-full tw-flex-col md:tw-flex-row md:tw-gap-x-4 lg:tw-w-[297px] lg:tw-flex-col;
+}
+
+.dashboard-charts-container {
+  @apply tw-flex tw-max-w-full tw-flex-auto tw-flex-wrap tw-gap-4;
+}
+
+.dashboard-chart-container {
+  @apply tw-max-w-full tw-flex-[440px];
+}

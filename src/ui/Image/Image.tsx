@@ -5,7 +5,7 @@ interface ImageProps {
   alt: string;
   width: number;
   height: number;
-  loading: 'lazy' | 'eager';
+  loading?: 'lazy' | 'eager';
   classNames?: string;
   style?: CSSProperties;
 }
@@ -25,7 +25,7 @@ const Image = ({
       alt={alt}
       width={width}
       height={height}
-      className={classNames}
+      className={classNames !== undefined ? classNames : ''}
       style={style}
       loading={loading ?? 'lazy'}
     />

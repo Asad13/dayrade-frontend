@@ -1,8 +1,8 @@
-import type { LoaderFunctionArgs, RouteObject } from 'react-router-dom';
+import type { RouteObject } from 'react-router-dom'; // LoaderFunctionArgs,
 import Root from '@src/Root';
 import DefaultLayout from '@layouts/DefaultLayout';
 import ErrorComp from '@components/utils/ErrorComp';
-import { queryClient } from '@utils/queryClient';
+// import { queryClient } from '@utils/queryClient';
 
 const DefaultRouter: Array<RouteObject> = [
   {
@@ -16,6 +16,10 @@ const DefaultRouter: Array<RouteObject> = [
           {
             path: '/',
             lazy: () => import('@pages/dashboard/Component'),
+          },
+          {
+            path: '/charts/:chart',
+            lazy: () => import('@pages/dashboard/chart/Component'),
           },
           {
             path: '/trades',
@@ -46,23 +50,27 @@ const DefaultRouter: Array<RouteObject> = [
             lazy: () => import('@pages/profile/Component'),
           },
           {
-            path: 'posts',
-            async loader() {
-              const { loader } = await import('@pages/posts/loader');
-              return loader(queryClient)();
-            },
-            lazy: () => import('@pages/posts/Component'),
-            // personalized ErrorBoundary can be exported from the Component or any other file
+            path: '/user/:id',
+            lazy: () => import('@pages/user/Component'),
           },
-          {
-            path: 'posts/:id',
-            async loader({ params }) {
-              const { loader } = await import('@pages/posts/post/loader');
-              return loader(queryClient)({ params } as LoaderFunctionArgs);
-            },
-            lazy: () => import('@pages/posts/post/Component'),
-            // personalized ErrorBoundary can be exported from the Component or any other file
-          },
+          // {
+          //   path: '/posts',
+          //   async loader() {
+          //     const { loader } = await import('@pages/posts/loader');
+          //     return loader(queryClient)();
+          //   },
+          //   lazy: () => import('@pages/posts/Component'),
+          //   // personalized ErrorBoundary can be exported from the Component or any other file
+          // },
+          // {
+          //   path: '/posts/:id',
+          //   async loader({ params }) {
+          //     const { loader } = await import('@pages/posts/post/loader');
+          //     return loader(queryClient)({ params } as LoaderFunctionArgs);
+          //   },
+          //   lazy: () => import('@pages/posts/post/Component'),
+          //   // personalized ErrorBoundary can be exported from the Component or any other file
+          // },
         ],
       },
     ],

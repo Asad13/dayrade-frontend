@@ -35,6 +35,10 @@
     @apply tw-text-sm tw-font-medium md:tw-text-[16px];
   }
 
+  .title {
+    @apply tw-text-lg tw-font-medium md:tw-text-xl lg:tw-text-2xl;
+  }
+
   .text1 {
     @apply tw-text-sm tw-font-normal md:tw-text-[16px];
   }

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import SideNavBarItem from '../SideNavBarItem';
 import {
   RightArrow,
@@ -13,6 +13,7 @@ import {
   User,
   Door,
 } from '@assets/icons/sidenav';
+import { logout } from '@services/auth';
 import { useOnClickOutside } from '@hooks/useOnClickOutside';
 
 const sideNavItemsTop = [
@@ -67,6 +68,7 @@ interface SideNavBarProps {
 }
 
 const Sidebar = ({ open, setOpen }: SideNavBarProps) => {
+  const navigate = useNavigate();
   const ref = useRef<HTMLDivElement>(null);
 
   const handleClickOutsie = () => {
@@ -163,6 +165,10 @@ const Sidebar = ({ open, setOpen }: SideNavBarProps) => {
                 <li className={`tw-group tw-relative tw-py-[6px]`}>
                   <button
                     className={`tw-flex tw-w-[279px] tw-items-center tw-gap-x-1 tw-text-sidenav hover:tw-text-secondary-dark`}
+                    onClick={() => {
+                      logout();
+                      navigate(0);
+                    }}
                   >
                     <span
                       className={`tw-flex tw-min-w-[57px] tw-max-w-[57px] tw-items-center tw-justify-center`}

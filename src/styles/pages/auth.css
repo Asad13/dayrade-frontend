@@ -31,7 +31,7 @@
 }
 
 .auth-submit-btn {
-  @apply tw-bg-success-dark tw-transition-all tw-duration-150 tw-ease-out hover:tw-bg-success-light;
+  @apply tw-bg-primary-dark tw-font-medium tw-text-background-dark tw-transition-all tw-duration-150 tw-ease-out hover:tw-bg-secondary-dark;
 }
 
 .auth-form-bottom {
