@@ -27,13 +27,9 @@ function App() {
   let router;
 
   if (isAuthenticated) {
-    router = createBrowserRouter([...DefaultRouter], {
-      basename: '/dashboard',
-    });
+    router = createBrowserRouter([...DefaultRouter]);
   } else {
-    router = createBrowserRouter([...AuthRouter], {
-      basename: '/dashboard',
-    });
+    router = createBrowserRouter([...AuthRouter]);
   }
 
   return <RouterProvider router={router} fallbackElement={<Loader />} />;
