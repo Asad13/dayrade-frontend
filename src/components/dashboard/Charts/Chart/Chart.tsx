@@ -21,14 +21,16 @@ const Chart = ({
   path,
   amount,
 }: ChartProps) => {
-  const [series, setSeries] = useState([
+  // setSeries
+  const [series] = useState([
     {
       name: footerTitle,
       data: [10, 41, 35, 51, 49, 62],
     },
   ]);
 
-  const [options, setOptions] = useState<ApexOptions>({
+  //setOptions
+  const [options] = useState<ApexOptions>({
     chart: {
       background: '#212121',
       zoom: {
