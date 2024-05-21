@@ -10,7 +10,7 @@ export default ({ mode }) => {
     ? parseInt(process.env.VITE_PORT)
     : 3000;
 
-  // const proxyRewriteRegex = new RegExp(`^${process.env.VITE_API_BASE_PATH}`);
+  const proxyRewriteRegex = new RegExp(`^${process.env.VITE_API_BASE_PATH}`);
 
   return defineConfig({
     plugins: [react()],
@@ -20,7 +20,7 @@ export default ({ mode }) => {
         [process.env.VITE_API_BASE_PATH]: {
           target: process.env.VITE_API_DEV_BASE_ENDPOINT,
           changeOrigin: true,
-          // rewrite: (path) => path.replace(proxyRewriteRegex, ''),
+          rewrite: (path) => path.replace(proxyRewriteRegex, ''),
         },
       },
     },
